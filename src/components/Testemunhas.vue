@@ -1,17 +1,17 @@
 <template>
- <!-- Testimonials Section -->
- <section id="testimonials" class="testimonials-section py-20 px-4 max-w-7xl mx-auto">
-      <div class="text-center mb-16">
-        <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">O que Nossos <span class="highlight-text">Clientes Dizem</span></h2>
-        <p class="text-gray-300 max-w-2xl mx-auto">Junte-se a centenas de empresas que transformaram seus processos com N8N</p>
-      </div>
-      
-      <div class="grid md:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
-        <div class="led-border">
-          <div class="testimonial-card inner-card rounded-xl p-6">
-            <div class="flex items-center mb-4">
-              <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
+  <!-- Testimonials Section - Horizontal Layout -->
+  <section id="testimonials" class="testimonials-section py-12 px-4 w-full overflow-x-auto">
+    <div class="text-center mb-12">
+      <h2 class="section-title text-3xl md:text-4xl font-bold mb-4">O que Nossos <span class="highlight-text">Clientes Dizem</span></h2>
+      <p class="text-gray-300 max-w-2xl mx-auto">Junte-se a centenas de empresas que transformaram seus processos com N8N</p>
+    </div>
+    
+    <div class="flex flex-nowrap gap-8 pb-6 w-max mx-auto">
+      <!-- Testimonial 1 -->
+      <div class="led-border flex-shrink-0 w-80">
+        <div class="testimonial-card inner-card rounded-xl p-6 h-full">
+          <div class="flex items-center mb-4">
+            <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
             <div>
               <h4 class="font-semibold">Maria Silva</h4>
               <p class="text-sm text-gray-400">Diretora de TI</p>
@@ -24,12 +24,13 @@
             </svg>
           </div>
         </div>
-        
-        <!-- Testimonial 2 -->
-        <div class="led-border">
-          <div class="testimonial-card inner-card rounded-xl p-6">
-            <div class="flex items-center mb-4">
-              <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
+      </div>
+      
+      <!-- Testimonial 2 -->
+      <div class="led-border flex-shrink-0 w-80">
+        <div class="testimonial-card inner-card rounded-xl p-6 h-full">
+          <div class="flex items-center mb-4">
+            <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
             <div>
               <h4 class="font-semibold">João Santos</h4>
               <p class="text-sm text-gray-400">CEO, LogiTech</p>
@@ -41,33 +42,54 @@
               <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
             </svg>
           </div>
-          </div>
         </div>
-        
-        <!-- Testimonial 3 -->
-        <div class="led-border">
-          <div class="testimonial-card inner-card rounded-xl p-6">
-            <div class="flex items-center mb-4">
-              <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
-              <div>
-                <h4 class="font-semibold">Ana Costa</h4>
-                <p class="text-sm text-gray-400">Gerente de Operações</p>
-              </div>
-            </div>
-            <p class="testimonial-text text-gray-300">"Como pequena empresa, o N8NZONE nos deu superpoderes de automação. Nossos processos ficaram mais eficientes e confiáveis."</p>
-            <div class="star-rating flex mt-4">
-              <svg v-for="star in 5" :key="star" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-              </svg>
-            </div>
-          </div>
-        </div>
-         </div>
       </div>
-    </section>
+      
+      <!-- Testimonial 3 -->
+      <div class="led-border flex-shrink-0 w-80">
+        <div class="testimonial-card inner-card rounded-xl p-6 h-full">
+          <div class="flex items-center mb-4">
+            <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Ana Costa</h4>
+              <p class="text-sm text-gray-400">Gerente de Operações</p>
+            </div>
+          </div>
+          <p class="testimonial-text text-gray-300">"Como pequena empresa, o N8NZONE nos deu superpoderes de automação. Nossos processos ficaram mais eficientes e confiáveis."</p>
+          <div class="star-rating flex mt-4">
+            <svg v-for="star in 5" :key="star" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Adicione mais depoimentos se necessário -->
+      <div class="led-border flex-shrink-0 w-80">
+        <div class="testimonial-card inner-card rounded-xl p-6 h-full">
+          <div class="flex items-center mb-4">
+            <div class="avatar-glow w-10 h-10 rounded-full mr-4"></div>
+            <div>
+              <h4 class="font-semibold">Carlos Mendes</h4>
+              <p class="text-sm text-gray-400">CTO, TechSolutions</p>
+            </div>
+          </div>
+          <p class="testimonial-text text-gray-300">"Implementamos o N8NZONE em toda nossa infraestrutura e os resultados foram impressionantes. ROI em menos de 3 meses."</p>
+          <div class="star-rating flex mt-4">
+            <svg v-for="star in 5" :key="star" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
+export default {
+  name: 'TestimonialsHorizontal'
+}
 </script>
 
 <style scoped>
@@ -198,5 +220,24 @@
   66% {
     transform: translate(-5px, 5px);
   }
+}
+
+/* Scrollbar personalizada para navegadores WebKit */
+.testimonials-section::-webkit-scrollbar {
+  height: 8px;
+}
+
+.testimonials-section::-webkit-scrollbar-track {
+  background: rgba(138, 184, 173, 0.1);
+  border-radius: 10px;
+}
+
+.testimonials-section::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #8ab8ad, #6a9b8e);
+  border-radius: 10px;
+}
+
+.testimonials-section::-webkit-scrollbar-thumb:hover {
+  background: #6a9b8e;
 }
 </style>
