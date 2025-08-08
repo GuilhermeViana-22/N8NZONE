@@ -1,0 +1,198 @@
+body {
+    background-color: #0e0e10;
+    color: white;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .hero-bg {
+    background: radial-gradient(
+        rgba(255, 255, 255, 0.03) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to bottom, #0e0e10, #1e2c28);
+    background-size: 32px 32px, 100% 100%;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glow-effect {
+    box-shadow: 0 0 15px rgba(138, 184, 173, 0.5);
+  }
+  
+  .feature-icon {
+    background: linear-gradient(135deg, rgba(138, 184, 173, 0.2), rgba(255, 255, 255, 0.1));
+  }
+  
+  .highlight-text {
+    color: #8ab8ad;
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+  }
+  
+  .pricing-card.popular {
+    border: 1px solid #8ab8ad;
+  }
+  
+  .bg-accent {
+    background-color: #8ab8ad;
+  }
+  
+  .text-accent {
+    color: #8ab8ad;
+  }
+  
+  .border-accent {
+    border-color: #8ab8ad;
+  }
+
+  /* Efeitos LED Globais */
+  .led-glow {
+    animation: led-pulse 2s ease-in-out infinite alternate;
+  }
+
+  @keyframes led-pulse {
+    from {
+      box-shadow: 0 0 20px rgba(138, 184, 173, 0.4);
+    }
+    to {
+      box-shadow: 0 0 40px rgba(138, 184, 173, 0.8);
+    }
+  }
+
+  /* Efeito de borda LED animada */
+  .led-border-animated {
+    position: relative;
+    background: linear-gradient(45deg, #8ab8ad, #6a9b8e, #8ab8ad, #6a9b8e);
+    background-size: 400% 400%;
+    animation: led-border-flow 4s ease-in-out infinite;
+    padding: 2px;
+    border-radius: 12px;
+  }
+
+  @keyframes led-border-flow {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  /* Efeito de texto LED */
+  .text-led {
+    text-shadow: 
+      0 0 10px rgba(138, 184, 173, 0.8),
+      0 0 20px rgba(138, 184, 173, 0.6),
+      0 0 30px rgba(138, 184, 173, 0.4);
+    animation: text-glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes text-glow {
+    from {
+      text-shadow: 
+        0 0 10px rgba(138, 184, 173, 0.8),
+        0 0 20px rgba(138, 184, 173, 0.6),
+        0 0 30px rgba(138, 184, 173, 0.4);
+    }
+    to {
+      text-shadow: 
+        0 0 15px rgba(138, 184, 173, 1),
+        0 0 30px rgba(138, 184, 173, 0.8),
+        0 0 45px rgba(138, 184, 173, 0.6);
+    }
+  }
+
+  /* Botões com efeito LED */
+  .btn-led {
+    position: relative;
+    background: linear-gradient(135deg, #8ab8ad, #6a9b8e);
+    box-shadow: 
+      0 0 20px rgba(138, 184, 173, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .btn-led:hover {
+    box-shadow: 
+      0 0 30px rgba(138, 184, 173, 0.8),
+      0 0 50px rgba(138, 184, 173, 0.4),
+      inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+  }
+
+  /* Efeito de partículas LED de fundo */
+  .led-particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+    background-image: 
+      radial-gradient(circle at 10% 20%, rgba(138, 184, 173, 0.05) 1px, transparent 1px),
+      radial-gradient(circle at 80% 80%, rgba(138, 184, 173, 0.05) 1px, transparent 1px),
+      radial-gradient(circle at 40% 40%, rgba(138, 184, 173, 0.03) 1px, transparent 1px),
+      radial-gradient(circle at 90% 10%, rgba(138, 184, 173, 0.05) 1px, transparent 1px),
+      radial-gradient(circle at 20% 90%, rgba(138, 184, 173, 0.04) 1px, transparent 1px);
+    background-size: 80px 80px, 120px 120px, 60px 60px, 100px 100px, 90px 90px;
+    animation: particles-float 25s linear infinite;
+  }
+
+  @keyframes particles-float {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(10px, -15px);
+    }
+    50% {
+      transform: translate(-5px, -10px);
+    }
+    75% {
+      transform: translate(15px, 5px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
+  /* Melhoria no glass-card com efeito LED */
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(138, 184, 173, 0.2);
+    transition: all 0.4s ease;
+  }
+
+  .glass-card:hover {
+    border-color: rgba(138, 184, 173, 0.5);
+    box-shadow: 
+      0 8px 32px rgba(138, 184, 173, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  /* Efeito de highlight LED */
+  .highlight-text {
+    color: #8ab8ad;
+    text-shadow: 0 0 15px rgba(138, 184, 173, 0.6);
+    animation: highlight-glow 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes highlight-glow {
+    from {
+      text-shadow: 0 0 15px rgba(138, 184, 173, 0.6);
+    }
+    to {
+      text-shadow: 0 0 25px rgba(138, 184, 173, 0.9);
+    }
+  }
